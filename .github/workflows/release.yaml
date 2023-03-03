@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-deno@v1
+      - uses: denoland/setup-deno@v1
         with:
           deno-version: 1.31.1
       - run: deno task compile
@@ -19,7 +19,7 @@ jobs:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-deno@v1
+      - uses: denoland/setup-deno@v1
         with:
           deno-version: 1.31.1
       - run: deno task compile
